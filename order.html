@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p>Hello 1906</p>
+
+  <button id="btn1">Order</button>
+    
+    订单:185158645616841651 正在处理,请稍后...
+
+    <form action="" enctype="multipart/form-data"></form>
+
+    <button id = "btn1">清除定时器</button>
+
+    <script>
+      
+      document.getElemenetById("btn1").addEventListener('click',function(){
+          clearInterval(t1);
+      });
+
+      var t1 = setInterval(aaa,1000);
+
+
+    setInserval(xxx,1000);
+
+    function xxx(){
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechange = function(){
+            setInterval(function(){
+        console.log(Math.random());
+    },1000);
+
+   function aaa(){
+        //给节点绑定事件
+    btn1.addEventListener('click',function(e)){
+      alert(222);
+
+      var httpRequest = new XMLHttpRequest();
+   
+
+    //处理服务器响应
+    httpRequest.onreadystatechange = function(){
+
+
+      //Process the server response  here
+      if(httpRequest.readySteate === XMLHttpRequest.DONE){
+        if(httpRequest.status === 200){
+          alert("服务器处理成功");
+        }else{
+          var data_str = httpRequest.responseText;
+          console.log(data_ste);
+
+          //将JSON文本转为JSON对象
+          var json_obj = JSON.parse($data_str);
+          console.log(json_obj);
+          console.log("错误码" + json_obj,errno);
+          console.log("支付状态" + json_obj.data.status);
+
+          var pay_status = json_obj.data.status;
+          //判断支付状态
+          if(pay_status == 1){
+            alert("支付成功");
+            window.location = 'https://www.baidu.com';
+          }else{
+
+          }
+        }
+      }else{
+
+      }
+    };
+
+    httpRequest.open('GET','/api.php',true);
+    httpRequest.send();
+
+    }
+
+   }
+        };
+    }
+
+    
+    
+  </script>
+</body>
+</html>
